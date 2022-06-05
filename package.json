@@ -1,0 +1,19 @@
+{
+  "name": "comments-clean-arch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yusuf Ganiyu",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "cuid": "^2.1.8",
+    "ip-regex": "^5.0.0",
+    "nodemon": "^2.0.16",
+    "sanitize-html": "^2.7.0"
+  }
+}
