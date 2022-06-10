@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import makeCallback from './express-callback';
+import { getComments } from './controllers';
 
 dotenv.config();
 
@@ -15,6 +16,8 @@ app.use((_, res, next) => {
 app.get('/', (req, res) => {
   res.send({ message: 'Hello World' });
 });
+
+app.get('/comments', makeCallback(getComments));
 
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
